@@ -1,17 +1,20 @@
 import firebase from "firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+//import { getAnalytics } from "firebase/analytics";
 
 // FIrebase Config from your firebase project.
 const firebaseConfig = {
-  apiKey: "AIzaSyApP76zDvHyXDP0HMLi31o1Hw90OFy2Wh0",
-  authDomain: "testauth-c81fe.firebaseapp.com",
-  projectId: "testauth-c81fe",
-  storageBucket: "testauth-c81fe.appspot.com",
-  messagingSenderId: "215145452734",
-  appId: "1:215145452734:web:077d4e7c0fde262cfe7aef",
+  apiKey: "AIzaSyBkyh6YyhdGo3boP2hgGRc2-JfKMZbLTFc",
+  authDomain: "maplateditorauth.firebaseapp.com",
+  projectId: "maplateditorauth",
+  storageBucket: "maplateditorauth.appspot.com",
+  messagingSenderId: "390483794970",
+  appId: "1:390483794970:web:103e70fa3490e9948e85a3",
+  measurementId: "G-SK5S19ZF33"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
+//const analytics = getAnalytics(app);
 const auth = app.auth();
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
